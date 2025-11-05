@@ -1,4 +1,4 @@
-![tests](https://github.com/SEU-USUARIO/calculadora-saude-financeira/actions/workflows/python-tests.yml/badge.svg)
+![tests](https://github.com/@ZehVitor-dev/calculadora-saude-financeira/actions/workflows/python-tests.yml/badge.svg)
 
 # calculadora-saude-financeira
 
