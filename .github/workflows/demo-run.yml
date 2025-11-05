@@ -1,1 +1,28 @@
+name: Demo run
+
+on:
+  workflow_dispatch:   # você pode disparar manualmente
+  push:
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+      - name: Run example (JSON)
+        run: |
+          python example.py --renda 3000 --despesas 2200 --dividas 800 --poupanca 2500 --json > output.json
+          cat output.json
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: demo-output
+          path: output.json
 
