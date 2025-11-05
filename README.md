@@ -1,3 +1,5 @@
+![tests](https://github.com/SEU-USUARIO/calculadora-saude-financeira/actions/workflows/python-tests.yml/badge.svg)
+
 # calculadora-saude-financeira
 
 # Calculadora de Saúde Financeira (Python)
